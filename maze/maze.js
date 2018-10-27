@@ -19,11 +19,11 @@ request.onreadystatechange = function() {
     rowLength = maze[0].length;
     columnLength = maze.length;
     mazeElement = document.getElementById('maze');
-    for (i = 0; i < rowLength - 1; i++) {
+    for (i = 0; i < rowLength; i++) {
         mazeElement.appendChild(tr = document.createElement('tr'));
         for (j = 0; j < columnLength - 1; j++) {
             tr.appendChild(td = document.createElement('td'));
-            td.appendChild(createImage(images[maze[j][i]]));
+            td.appendChild(createImage(images[maze[i][j]]));
             console.log(td);
         }
     }
