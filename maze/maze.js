@@ -17,7 +17,7 @@ request.onreadystatechange = function() {
         mazeElement.appendChild(tr = document.createElement('tr'));
         for (j = 0; j < columnLength; j++) {
             tr.appendChild(td = document.createElement('td'));
-            td.appendChild(images[maze[j][i]]);
+            td.appendChild(images[maze[i][j]]); // ???
         }
     }
 };
