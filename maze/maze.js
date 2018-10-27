@@ -14,10 +14,10 @@ request.onreadystatechange = function() {
     columnLength = maze.length;
     mazeElement = document.getElementById('maze');
     for (i = 0; i < columnLength; i++) {
-        mazeElement.addChild(tr = document.createElement('tr'));
+        mazeElement.appendChild(tr = document.createElement('tr'));
         for (j = 0; j < rowLength; j++) {
-            mazeElement.addChild(td = document.createElement('td'));
-            td.addChild(images[maze[i][j]]);
+            mazeElement.appendChild(td = document.createElement('td'));
+            td.appendChild(images[maze[i][j]]);
         }
     }
 };
