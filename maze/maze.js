@@ -61,14 +61,14 @@ function checkKey(e) {
         } else { console.log('no'); }
     } else if (e.keyCode === 39) {
         console.log('>');
-        if (player[0] != rowLength-1 && maze[player[1]][player[0]+1] == ' ') {
+        if (player[0] != rowLength-2 && maze[player[1]][player[0]+1] == ' ') {
             replacePlayer(' ');
             player[0]++;
             replacePlayer('@');
         } else { console.log('no'); }
     } else if (e.keyCode === 40) {
         console.log('v');
-        if (player[1] != columnLength-1 && maze[player[1]+1][player[0]] == ' ') {
+        if (player[1] != columnLength-2 && maze[player[1]+1][player[0]] == ' ') {
             replacePlayer(' ');
             player[1]++;
             replacePlayer('@');
