@@ -13,9 +13,9 @@ request.onreadystatechange = function() {
     rowLength = maze[0].length;
     columnLength = maze.length;
     mazeElement = document.getElementById('maze');
-    for (int i = 0; i < columnLength; i++) {
+    for (i = 0; i < columnLength; i++) {
         mazeElement.addChild(tr = document.createElement('tr'));
-        for (int j = 0; j < rowLength; j++) {
+        for (j = 0; j < rowLength; j++) {
             mazeElement.addChild(td = document.createElement('td'));
             td.addChild(images[maze[i][j]]);
         }
