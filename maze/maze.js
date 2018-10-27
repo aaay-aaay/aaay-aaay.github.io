@@ -13,11 +13,11 @@ request.onreadystatechange = function() {
     rowLength = maze[0].length;
     columnLength = maze.length;
     mazeElement = document.getElementById('maze');
-    for (i = 0; i < rowLength; i++) {
+    for (i = 0; i < rowLength - 1; i++) {
         mazeElement.appendChild(tr = document.createElement('tr'));
-        for (j = 0; j < columnLength; j++) {
+        for (j = 0; j < columnLength - 1; j++) {
             tr.appendChild(td = document.createElement('td'));
-            td.appendChild(images[maze[i][j]]); // ???
+            td.appendChild(images[maze[j][i]]);
         }
     }
 };
